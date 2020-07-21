@@ -6,8 +6,8 @@ $token = trim(fgets(STDIN));
 echo "\n".color("nevy","?] Mau Redeem Voucher?: y/n ");
         $pilihan = trim(fgets(STDIN));
         if($pilihan == "y" || $pilihan == "Y"){
-        echo color("red","===========(REDEEM VOUCHER)===========");
-        echo "\n".color("nevy","!] Claim voc GOFOOD A");
+        echo color("red","===========(RENDEEM JIMAT)===========");
+        echo "\n".color("nevy","!] KENTING MUNGIL");
         echo "\n".color("purple","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("nevy",".");
@@ -21,7 +21,7 @@ echo "\n".color("nevy","?] Mau Redeem Voucher?: y/n ");
         }else{
         echo "\n".color("red","-] Message: ".$message);
         gofood:
-        echo "\n".color("nevy","!] Claim voc GOFOOD B");
+        echo "\n".color("nevy","!] SAPU JAGAT");
         echo "\n".color("purple","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("nevy",".");
@@ -33,7 +33,7 @@ echo "\n".color("nevy","?] Mau Redeem Voucher?: y/n ");
         echo "\n".color("green","+] Message: ".$message);
         }else{
         echo "\n".color("red","-] Message: ".$message);
-        echo "\n".color("nevy","!] Claim voc GOFOOD C");
+        echo "\n".color("nevy","!] DEWI ASIH");
         echo "\n".color("purple","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("nevy",".");
