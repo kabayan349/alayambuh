@@ -3,7 +3,7 @@ date_default_timezone_set('Asia/Jakarta');
 include "function2.php";
 
 echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-echo "\e[93m            \e[96m BERDOA DULU SEBELUM CLAIM \e[93m \n";
+echo "\e[93m            \e[96m TEGAL GREEN SNIPER \e[93m \n";
 echo "\e[96m  ==============================================\n";
 echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 
@@ -50,9 +50,9 @@ echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("nevy","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
-        echo color("nevy","\n===========(SUROBOYO LOSST REWEL PEGAT)===========");
-        echo "\n".color("nevy","!] GOFOOD1");
-        echo "\n".color("yellow","!] Please wait");
+        echo color("nevy","\n===========(BOJO REWEL PEGAT)===========");
+        echo "\n".color("nevy","!] BOJO PERTAMA");
+        echo "\n".color("yellow","!] Tunggoni...");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(15);
@@ -65,8 +65,8 @@ echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         }else{
         echo "\n".color("red","+] Message: ".$message);
 	gocar:
-        echo "\n".color("nevy","!] GOFOOD 2 ");
-        echo "\n".color("yellow","!] Please wait");
+        echo "\n".color("nevy","!] BOJO KEDUA ");
+        echo "\n".color("yellow","!] Diapeli...");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(15);
@@ -79,13 +79,13 @@ echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         }else{
         echo "\n".color("red","+] Message: ".$message);
         gofood:
-        echo "\n".color("nevy","!] GOFOOD3");
-        echo "\n".color("yellow","!] Please wait");
+        echo "\n".color("nevy","!] BOJO KETIGA");
+        echo "\n".color("yellow","!] Jajani...");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
-        sleep(10);
+        sleep(0);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2107"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":""}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("green","+] Message: ".$message);
         sleep(2);
