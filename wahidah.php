@@ -51,7 +51,7 @@ echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo color("nevy","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
         echo color("nevy","\n===========(BOJO REWEL PEGAT)===========");
-        echo "\n".color("purple","# CLAIM VOUCHER JANDA MUDA");
+        echo "\n".color("purple","# WAHIDAH..");
         echo "\n".color("blue","# SEGER BANGET ");
         for($a=1;$a<=3;$a++){
         echo color("purple",".");
@@ -65,7 +65,7 @@ echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         }else{
         echo "\n".color("red","🔐▶️ Message: ".$message);
 	      gocar:
-        echo "\n".color("green","# CLAIM VOUCHER ISTRI PERTAMA");
+        echo "\n".color("green","# SANAH..");
         echo "\n".color("white","# LAGI DI GOYANG ");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
@@ -79,22 +79,12 @@ echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         }else{
         echo "\n".color("red","🔐▶️ Message: ".$message);
         gofood:
-        echo "\n".color("white","# CLAIM VOUCHER ISTRI KEDUA");
-        echo "\n".color("green","#LAGI ENAK COY");
+        echo "\n".color("white","# ENI....");
+        echo "\n".color("green","#LAGI ENAK COX.");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(10);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
-        $message = fetch_value($code1,'"message":"','"');
-        echo "\n".color("white","🔓▶️ Message: ".$message);
-        echo "\n".color("yellow","# CLAIM VOUCHER ISTRI KETIGA");
-        echo "\n".color("white","# JANGAN GANGGU LAGI ENAK");
-        for($a=1;$a<=3;$a++){
-        echo color("white",".");
-        sleep(5);
-        }
-        sleep(15);
         $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $messageboba09 = fetch_value($boba09,'"message":"','"');
         echo "\n".color("blue","# Message: ".$messageboba09);
