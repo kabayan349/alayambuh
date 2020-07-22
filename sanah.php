@@ -20,8 +20,8 @@ echo "\n".color("white","?] Mau Redeem Voucher?: y/n ");
         }else{
         echo "\n".color("red","🔐▶ Message: ".$message);
         gofood:
-        echo "\n".color("white","▶Claim 15+10+5 laagi");
-        echo "\n".color("blue","▶ tunggu lah");
+        echo "\n".color("white","Bang Jali...");
+        echo "\n".color("blue","Sabar lenn..");
         for($a=1;$a<=3;$a++){
         echo color("nevy",".");
         sleep(10);
@@ -32,8 +32,8 @@ echo "\n".color("white","?] Mau Redeem Voucher?: y/n ");
         echo "\n".color("green","🔓▶Message: ".$message);
         }else{
         echo "\n".color("red","🔐▶ Message: ".$message);
-        echo "\n".color("white","▶ Claim 15 10 5 sekali lagi!!");
-        echo "\n".color("blue","▶ tunggu lah");
+        echo "\n".color("white","Masdar...");
+        echo "\n".color("blue","Gawe Kopi...");
         for($a=1;$a<=3;$a++){
         echo color("nevy",".");
         sleep(10);
@@ -45,6 +45,7 @@ echo "\n".color("white","?] Mau Redeem Voucher?: y/n ");
         }else{
         echo "\n".color("red","🔐▶Message: ".$message);
         sleep(1);
+        }
         $cekvoucher = request('/gopoints/v3/wallet/vouchers?limit=10&page=1', $token);
         $total = fetch_value($cekvoucher,'"total_vouchers":',',');
         $voucher1 = getStr1('"title":"','",',$cekvoucher,"1");
